@@ -1,4 +1,4 @@
-{
+r{
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "es6"],
