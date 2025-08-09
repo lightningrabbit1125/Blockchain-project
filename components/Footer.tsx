@@ -1,7 +1,6 @@
 'use client'
 
 import React from "react";
-import Image from "next/image";
 import BlackButton from "./buttons/black";
 
 const coins = ['USDT','SOL','BNB','LTC', 'ETC','TRX','BTC','TON'] as const;

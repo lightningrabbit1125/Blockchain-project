@@ -2,11 +2,8 @@
 
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faSearch, faHeart, faClock, faBitcoinSign, faDice, faPlayCircle, faChartLine, faCoins, faFutbol, faTable, faHandshake, faCrown, faGamepad, faGift, faInfoCircle, faBookOpen, faMoneyBill, faHeadset, faChevronRight, faShield
-} from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useSidebar } from './providers/SidebarProvider';
-
 const Sidebar: React.FC = () => {
     const { isCollapsed } = useSidebar();
 

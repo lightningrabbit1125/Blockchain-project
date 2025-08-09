@@ -2,10 +2,8 @@
 
 import React from "react";
 import BlackButton from "./buttons/black";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faGift, faSearch, faCommentDots, faFlag } from '@fortawesome/free-solid-svg-icons';
+import RedButton from "./buttons/red";
 import { useSidebar } from './providers/SidebarProvider';
-import Image from "next/image";
 const Header: React.FC = () => {
     const { toggleSidebar } = useSidebar();
 
@@ -70,16 +68,7 @@ const Header: React.FC = () => {
                     </div>
 
                     {/* Register button */}
-                    <button
-                    className="w-[85px] h-[33px] rounded-lg border border-gray-600 flex items-center justify-center transition-colors"
-                    style={{
-                        background: "linear-gradient(90deg, #F9476E 0%, #BD0139 100%)",
-                        paddingLeft: "16px",
-                        paddingRight: "16px",
-                    }}
-                    >
-                    <span className="text-white font-medium text-xs">Register</span>
-                    </button>
+                    <RedButton className="w-[85px]">Register</RedButton>
 
                     {/* Language/Flag button */}
                     <BlackButton>

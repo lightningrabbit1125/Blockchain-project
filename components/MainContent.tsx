@@ -1,8 +1,9 @@
 'use client'
 
 import React from "react";
-import TypeOne from "./cards/type.one";
+import { TypeOneCarousel } from "./cards/type.one";
 import TypeTwo from "./cards/type.two";
+import TypeThree from "./cards/type.three";
 
 const bannerCards = [
   {
@@ -38,6 +39,312 @@ const bannerCards = [
     image: '/images/banner/Banner09.png',
     link: '#',
   },
+  {
+    title: (
+      <>
+        <span className="block">REFER &</span>
+        <span className="block">REWARDS</span>
+      </>
+    ),
+    button: 'CLAIM NOW',
+    image: '/images/banner/Banner12.jpg',
+    link: '#',
+  },
+  {
+    title: (
+      <>
+        <span className="block">COMPLETE TASKS &</span>
+        <span className="block">GET DAILY REWARDS!</span>
+      </>
+    ),
+    button: 'JOIN NOW',
+    image: '/images/banner/Banner10.jpg',
+    link: '#',
+  },
+  {
+    title: (
+      <>
+        <span className="block">CHECK-IN</span>
+        <span className="block">REWARDS!</span>
+      </>
+    ),
+    button: 'JOIN NOW',
+    image: '/images/banner/Banner09.png',
+    link: '#',
+  },
+  {
+    title: (
+      <>
+        <span className="block">REFER &</span>
+        <span className="block">REWARDS</span>
+      </>
+    ),
+    button: 'CLAIM NOW',
+    image: '/images/banner/Banner12.jpg',
+    link: '#',
+  },
+  {
+    title: (
+      <>
+        <span className="block">COMPLETE TASKS &</span>
+        <span className="block">GET DAILY REWARDS!</span>
+      </>
+    ),
+    button: 'JOIN NOW',
+    image: '/images/banner/Banner10.jpg',
+    link: '#',
+  },
+  {
+    title: (
+      <>
+        <span className="block">CHECK-IN</span>
+        <span className="block">REWARDS!</span>
+      </>
+    ),
+    button: 'JOIN NOW',
+    image: '/images/banner/Banner09.png',
+    link: '#',
+  },
+] as const;
+
+const card1 = [
+  {
+    badge: "NEW",
+    views: "62",
+    user: "user",
+    image: "/images/fox.png",
+  },
+  {
+    badge: "NEW",
+    views: "62",
+    user: "user",
+    image: "/images/fox.png",
+  },
+  {
+    badge: "NEW",
+    views: "62",
+    user: "user",
+    image: "/images/fox.png",
+  },
+  {
+    badge: "NEW",
+    views: "62",
+    user: "user",
+    image: "/images/fox.png",
+  },
+  {
+    badge: "NEW",
+    views: "62",
+    user: "user",
+    image: "/images/fox.png",
+  },
+  {
+    badge: "NEW",
+    views: "62",
+    user: "user",
+    image: "/images/fox.png",
+  },
+
+] as const;
+
+const card2 = [
+  {
+    badge: "HOT",
+    views: "62",
+    user: "user-blue",
+    image: "/images/d6c2ef9c2a0a079a96385e767460309709e400ff.png",
+  },
+  {
+    badge: "HOT",
+    views: "62",
+    user: "user-blue",
+    image: "/images/d6c2ef9c2a0a079a96385e767460309709e400ff.png",
+  },
+  {
+    badge: "HOT",
+    views: "62",
+    user: "user-blue",
+    image: "/images/d6c2ef9c2a0a079a96385e767460309709e400ff.png",
+  },
+  {
+    badge: "HOT",
+    views: "62",
+    user: "user-blue",
+    image: "/images/d6c2ef9c2a0a079a96385e767460309709e400ff.png",
+  },
+  {
+    badge: "HOT",
+    views: "62",
+    user: "user-blue",
+    image: "/images/d6c2ef9c2a0a079a96385e767460309709e400ff.png",
+  },
+  {
+    badge: "HOT",
+    views: "62",
+    user: "user-blue",
+    image: "/images/d6c2ef9c2a0a079a96385e767460309709e400ff.png",
+  },
+
+] as const;
+
+const card3 = [
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/2eba47e2f18740f3bad6eeaee2d6a6a41f5be8a9.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/2eba47e2f18740f3bad6eeaee2d6a6a41f5be8a9.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/2eba47e2f18740f3bad6eeaee2d6a6a41f5be8a9.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/2eba47e2f18740f3bad6eeaee2d6a6a41f5be8a9.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/2eba47e2f18740f3bad6eeaee2d6a6a41f5be8a9.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/2eba47e2f18740f3bad6eeaee2d6a6a41f5be8a9.png",
+  },
+
+] as const;
+
+const card4 = [
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/plane.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/plane.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/plane.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/plane.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/plane.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/plane.png",
+  },
+
+] as const;
+
+const card5 = [
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/football.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/football.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/football.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/football.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/football.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/football.png",
+  },
+
+] as const;
+
+const card6 = [
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/ox.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/ox.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/ox.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/ox.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/ox.png",
+  },
+  {
+    badge: "HOT",
+    views: "88",
+    user: "user-blue",
+    image: "/images/ox.png",
+  },
+
 ] as const;
 
 const brand = [
@@ -47,34 +354,28 @@ const brand = [
 
 const MainContent: React.FC = () => {
   return (
-    <div className="px-6 py-12">
+    <div className="px-6 py-12 max-w-[calc(100vw-296px)] overflow-x-hidden">
       {/* Promotional Banners */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        {bannerCards.map((card, idx) => (
-          <TypeOne key={idx} title={card.title} button={card.button} image={card.image} link={card.link} />
-        ))}
+      <div className="mb-12">
+        <TypeOneCarousel 
+          cards={bannerCards} 
+          autoPlay={true} 
+          autoPlayInterval={5000} 
+          showDots={true} 
+        />
       </div>
 
      
 
       {/* New Launches Section */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-white mb-4">New Launches</h2>
+        <h2 className="text-4.5 font-bold text-white mb-4 flex gap-2">
+          <img src="/icons/Home.svg" alt="home" />
+          New Launches
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div key={item} className="bg-gray-800 rounded-lg overflow-hidden">
-              <div className="relative">
-                <img
-                  src="/images/fox.png"
-                  alt="HUNTRESS WILD VENGEANCE"
-                  className="w-full object-cover"
-                />
-                <div className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">NEW</div>
-              </div>
-              <div className="p-3">
-                <h3 className="text-white text-sm font-semibold">HUNTRESS WILD VENGEANCE</h3>
-              </div>
-            </div>
+          {card1.map((item) => (
+            <TypeThree user={item.user} badge={item.badge} image={item.image} views={item.views} />
           ))}
         </div>
         
@@ -82,46 +383,27 @@ const MainContent: React.FC = () => {
 
       {/* Live Casino Section */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Live Casino</h2>
+        <h2 className="text-4.5 font-bold text-white mb-4 flex gap-2">
+          <img src="/icons/Casino1.svg" alt="home" />
+          Live Casino
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div key={item} className="bg-gray-800 rounded-lg overflow-hidden">
-              <div className="relative">
-                <img
-                  src="/images/d6c2ef9c2a0a079a96385e767460309709e400ff.png"
-                  alt="SPEED BACCARAT"
-                  className="w-full object-cover"
-                />
-                <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">HOT</div>
-              </div>
-              <div className="p-3">
-                <h3 className="text-white text-sm font-semibold">SPEED BACCARAT</h3>
-              </div>
-            </div>
+          {card2.map((item) => (
+            <TypeThree user={item.user} badge={item.badge} image={item.image} views={item.views} />
           ))}
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div key={item} className="bg-gray-800 rounded-lg overflow-hidden">
-              <div className="relative">
-                <img
-                  src="/images/d6c2ef9c2a0a079a96385e767460309709e400ff.png"
-                  alt="SPEED BACCARAT"
-                  className="w-full object-cover"
-                />
-                <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">HOT</div>
-              </div>
-              <div className="p-3">
-                <h3 className="text-white text-sm font-semibold">SPEED BACCARAT</h3>
-              </div>
-            </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-4">
+          {card2.map((item) => (
+            <TypeThree user={item.user} badge={item.badge} image={item.image} views={item.views} />
           ))}
         </div>
       </div>
 
       {/* Hash Section */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Hash</h2>
+        <h2 className="text-4.5 font-bold text-white mb-4 flex gap-2">
+          <img src="/icons/Hash.svg" alt="hash" />
+          Hash</h2>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {[1, 2, 3, 4, 5].map((item) => (
             <TypeTwo
@@ -141,46 +423,28 @@ const MainContent: React.FC = () => {
 
       {/* Slots Section */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Slots</h2>
+        <h2 className="text-4.5 font-bold text-white mb-4 flex gap-2">
+          <img src="/icons/Slots.svg" alt="slots" />
+          Slots
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div key={item} className="bg-gray-800 rounded-lg overflow-hidden">
-              <div className="relative">
-                <img
-                  src="/images/2eba47e2f18740f3bad6eeaee2d6a6a41f5be8a9.png"
-                  alt="MAHJONG WAYS"
-                  className="w-full object-cover"
-                />
-                <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">HOT</div>
-              </div>
-              <div className="p-3">
-                <h3 className="text-white text-sm font-semibold">MAHJONG WAYS</h3>
-              </div>
-            </div>
+          {card3.map((item) => (
+            <TypeThree user={item.user} badge={item.badge} image={item.image} views={item.views} />
           ))}
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div key={item} className="bg-gray-800 rounded-lg overflow-hidden">
-              <div className="relative">
-                <img
-                  src="/images/2eba47e2f18740f3bad6eeaee2d6a6a41f5be8a9.png"
-                  alt="MAHJONG WAYS"
-                  className="w-full object-cover"
-                />
-                <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">HOT</div>
-              </div>
-              <div className="p-3">
-                <h3 className="text-white text-sm font-semibold">MAHJONG WAYS</h3>
-              </div>
-            </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-4">
+          {card3.map((item) => (
+            <TypeThree user={item.user} badge={item.badge} image={item.image} views={item.views} />
           ))}
         </div>
       </div>
 
       {/* P/F Futures Section */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-white mb-4">P/F Futures</h2>
+        <h2 className="text-4.5 font-bold text-white mb-4 flex gap-2">
+          <img src="/icons/Futures1.svg" alt="future" />
+          P/F Futures
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
           {[
             { name: "BTC", price: "$43,250", change: "+2.5%" },
@@ -210,66 +474,37 @@ const MainContent: React.FC = () => {
 
       {/* Cryptogra Section */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Cryptogra</h2>
+        <h2 className="text-4.5 font-bold text-white mb-4 flex gap-2">
+          <img src="/icons/Cryptogra1.svg" alt="cryptogra" />
+          Cryptogra</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div key={item} className="bg-gray-800 rounded-lg overflow-hidden">
-              <div className="relative">
-                <img
-                  src="/images/plane.png"
-                  alt="AVIATOR"
-                  className="w-full object-cover"
-                />
-                <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">HOT</div>
-              </div>
-              <div className="p-3">
-                <h3 className="text-white text-sm font-semibold">AVIATOR</h3>
-              </div>
-            </div>
+          {card4.map((item) => (
+            <TypeThree user={item.user} badge={item.badge} image={item.image} views={item.views} />
           ))}
         </div>
       </div>
 
       {/* Sport Section */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Sport</h2>
+        <h2 className="text-4.5 font-bold text-white mb-4 flex gap-2">
+          <img src="/icons/Sport.svg" alt="Sport" />
+          Sport
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div key={item} className="bg-gray-800 rounded-lg overflow-hidden">
-              <div className="relative">
-                <img
-                  src="/images/football.png"
-                  alt="FB SPORTS"
-                  className="w-full object-cover"
-                />
-                <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">HOT</div>
-              </div>
-              <div className="p-3">
-                <h3 className="text-white text-sm font-semibold">FB SPORTS</h3>
-              </div>
-            </div>
+          {card5.map((item) => (
+            <TypeThree user={item.user} badge={item.badge} image={item.image} views={item.views} />
           ))}
         </div>
       </div>
 
       {/* Chess and cards Section */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Chess and cards</h2>
+        <h2 className="text-4.5 font-bold text-white mb-4 flex gap-2">
+          <img src="/icons/tablegame.svg" alt="tablegame" />
+          Chess and cards</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div key={item} className="bg-gray-800 rounded-lg overflow-hidden">
-              <div className="relative">
-                <img
-                  src="/images/ox.png"
-                  alt="ox"
-                  className="w-full object-cover"
-                />
-                <div className="absolute top-2 left-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">HOT</div>
-              </div>
-              <div className="p-3">
-                <h3 className="text-white text-sm font-semibold">BANKER BULL BULL</h3>
-              </div>
-            </div>
+          {card6.map((item) => (
+            <TypeThree user={item.user} badge={item.badge} image={item.image} views={item.views} />
           ))}
         </div>
       </div>
